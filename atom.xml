@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://okawai.coding.me/"/>
-  <updated>2019-07-19T13:15:24.000Z</updated>
+  <updated>2019-07-20T03:26:40.000Z</updated>
   <id>http://okawai.coding.me/</id>
   
   <author>
@@ -17,17 +17,41 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>如何使用SVP将30帧视频转换为60帧视频</title>
+    <link href="http://okawai.coding.me/2019/07/20/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8SVP%E5%B0%8630%E5%B8%A7%E8%A7%86%E9%A2%91%E8%BD%AC%E6%8D%A2%E4%B8%BA60%E5%B8%A7%E8%A7%86%E9%A2%91/"/>
+    <id>http://okawai.coding.me/2019/07/20/如何使用SVP将30帧视频转换为60帧视频/</id>
+    <published>2019-07-20T01:39:39.000Z</published>
+    <updated>2019-07-20T03:26:40.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;font size=&quot;4&quot;&gt;SVP全称是Smooth Video Project，是一种可以利用补充中间帧提升视频帧数从而使视频画面更加流畅的软件技术，下面我将根据网上的内容进行详细的说明。&lt;/font&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="技术分享" scheme="http://okawai.coding.me/categories/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/"/>
+    
+    
+      <category term="技术" scheme="http://okawai.coding.me/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+      <category term="视频技术" scheme="http://okawai.coding.me/tags/%E8%A7%86%E9%A2%91%E6%8A%80%E6%9C%AF/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Pray For Kyoto Anime</title>
     <link href="http://okawai.coding.me/2019/07/18/Pray-For-Kyoto-Anime/"/>
     <id>http://okawai.coding.me/2019/07/18/Pray-For-Kyoto-Anime/</id>
     <published>2019-07-18T14:03:29.000Z</published>
-    <updated>2019-07-19T13:15:24.000Z</updated>
+    <updated>2019-07-20T03:25:30.000Z</updated>
     
     <summary type="html">
     
       &lt;p&gt;&lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=&quot;330&quot; height=&quot;86&quot; src=&quot;//music.163.com/outchain/player?type=2&amp;id=22706980&amp;auto=1&amp;height=66&quot;&gt;&lt;/iframe&gt;&lt;br&gt;&lt;font size=&quot;4&quot;&gt;2019.7.18注定是一个不寻常的日子。&lt;br&gt;Kyoto Animation（京都动画）又名“京阿尼”，其第一工作室于这天烧毁，截至于2019.7.18下午已经有33人死亡，36人轻重伤，以及数人失联……如此惨状让人难以相信又不得不去相信，我不知道那名40多岁的人是怀着怎样的心情做的这件事，毕竟截至现在都还不清楚是否为其所做。虽说我并没有十分了解这件事情，我只是在一些网站上看到了新闻的内容，不过我还是打算写下我对于京都动画所拥有的内心感受。&lt;/font&gt;&lt;/p&gt;
     
     </summary>
+    
+      <category term="杂谈" scheme="http://okawai.coding.me/categories/%E6%9D%82%E8%B0%88/"/>
     
     
       <category term="祈福" scheme="http://okawai.coding.me/tags/%E7%A5%88%E7%A6%8F/"/>
@@ -39,7 +63,7 @@
     <link href="http://okawai.coding.me/2019/07/06/%E5%88%9D%E6%AC%A1%E8%A7%81%E9%9D%A2-%E8%AF%B7%E5%A4%9A%E6%8C%87%E6%95%99/"/>
     <id>http://okawai.coding.me/2019/07/06/初次见面-请多指教/</id>
     <published>2019-07-06T06:37:09.000Z</published>
-    <updated>2019-07-19T13:15:02.000Z</updated>
+    <updated>2019-07-20T03:25:28.000Z</updated>
     
     <summary type="html">
     
@@ -47,6 +71,8 @@
 &lt;p&gt;&lt;font size=&quot;4&quot;&gt;这个博客其实早在几天就在一位&lt;font color=&quot;red&quot;&gt;&lt;del&gt;蒟蒻&lt;/del&gt;&lt;/font&gt;的帮助下顺利地建立了起来，但由于时间关系，直到今日才有时间写我的第一篇文章，想来也没做什么准备，只好打上“你好，世界”。接下来我会持续更新我个人的学习和生活状况以及我个人的一些小小的经验之谈。&lt;/font&gt;&lt;/p&gt;
     
     </summary>
+    
+      <category term="杂谈" scheme="http://okawai.coding.me/categories/%E6%9D%82%E8%B0%88/"/>
     
     
       <category term="第一次" scheme="http://okawai.coding.me/tags/%E7%AC%AC%E4%B8%80%E6%AC%A1/"/>
