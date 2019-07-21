@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://okawai.coding.me/"/>
-  <updated>2019-07-20T03:29:18.000Z</updated>
+  <updated>2019-07-21T04:17:50.000Z</updated>
   <id>http://okawai.coding.me/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>博客美化（一）之看板娘安装</title>
+    <link href="http://okawai.coding.me/2019/07/21/%E2%80%9C%E2%80%9C%E5%8D%9A%E5%AE%A2%E7%BE%8E%E5%8C%96%EF%BC%88%E4%B8%80%EF%BC%89%E4%B9%8B%E7%9C%8B%E6%9D%BF%E5%A8%98%E5%AE%89%E8%A3%85%E2%80%9D/"/>
+    <id>http://okawai.coding.me/2019/07/21/““博客美化（一）之看板娘安装”/</id>
+    <published>2019-07-21T03:34:51.000Z</published>
+    <updated>2019-07-21T04:17:50.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;博客美化（一）&quot;&gt;&lt;a href=&quot;#博客美化（一）&quot; class=&quot;headerlink&quot; title=&quot;博客美化（一）&quot;&gt;&lt;/a&gt;博客美化（一）&lt;/h2&gt;&lt;p&gt;&lt;font size=&quot;4&quot;&gt;近期笔者在网上看到了许多大佬关于如何美化博客的文章，其中大多都很详细，其实我只要贴上大佬的地址，相信你们通过看大佬的博客也可以有很大的收获，不过我还是打算分享下其中的一部分，即左边这个&lt;del&gt;小正太&lt;/del&gt;究竟是怎么来的。&lt;/font&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="博客美化" scheme="http://okawai.coding.me/categories/%E5%8D%9A%E5%AE%A2%E7%BE%8E%E5%8C%96/"/>
+    
+    
+      <category term="美化" scheme="http://okawai.coding.me/tags/%E7%BE%8E%E5%8C%96/"/>
+    
+      <category term="github" scheme="http://okawai.coding.me/tags/github/"/>
+    
+  </entry>
   
   <entry>
     <title>如何使用SVP将30帧视频转换为60帧视频</title>
