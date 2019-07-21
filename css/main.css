@@ -1741,7 +1741,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #7d3bf0;
+  background: #38c939;
 }
 .feed-link,
 .chat {
@@ -2938,4 +2938,7 @@ body {
   background-attachment: fixed;
   background-repeat: repeat;
   background-size: contain;
+}
+.site-meta {
+  background-image: url("/images/background.png");
 }
