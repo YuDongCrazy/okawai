@@ -1,49 +1,111 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search>
-  <entry>
-    <title><![CDATA[博客美化（一）之看板娘安装]]></title>
-    <url>%2F2019%2F07%2F21%2F%E2%80%9C%E2%80%9C%E5%8D%9A%E5%AE%A2%E7%BE%8E%E5%8C%96%EF%BC%88%E4%B8%80%EF%BC%89%E4%B9%8B%E7%9C%8B%E6%9D%BF%E5%A8%98%E5%AE%89%E8%A3%85%E2%80%9D%2F</url>
-    <content type="text"><![CDATA[博客美化（一）近期笔者在网上看到了许多大佬关于如何美化博客的文章，其中大多都很详细，其实我只要贴上大佬的地址，相信你们通过看大佬的博客也可以有很大的收获，不过我还是打算分享下其中的一部分，即左边这个小正太究竟是怎么来的。 首先我们需要安装hexo-helper-live2d，在blog根目录使用git-bash输入以下代码 npm install --save hexo-helper-live2d接下来是配置，找到与source文件夹同一级别下的_config.yml文件，添加以下代码 12345678910111213141516171819202122232425262728293031323334353637383940414243444546# 看板娘live2d: enable: true #是否允许出现 scriptFrom: local pluginRootPath: live2dw/ pluginJsPath: lib/ pluginModelPath: assets/ model: #模型名称 use: #live2d-widget-model-chitose #西装男 #ive2d-widget-model-epsilon2_1 #loli #live2d-widget-model-gf ##live2d-widget-model-haru\01 ##live2d-widget-model-haru\02 live2d-widget-model-haruto #小正太 #live2d-widget-model-hibiki #学生妹 #live2d-widget-model-hijiki #黑猫 #live2d-widget-model-izumi #女（红衣） #live2d-widget-model-miku #live2d-widget-model-ni-j #科学小正太 #live2d-widget-model-nico #狐狸小正太 #live2d-widget-model-nietzsche #双马尾小loli1 #live2d-widget-model-nipsilon #双马尾小loli2 #live2d-widget-model-nito #菠萝头小loli #live2d-widget-model-shizuku #live2d-widget-model-tororo #白猫 #live2d-widget-model-tsumiki #绿头发的妹子 #live2d-widget-model-unitychan #黄发小loli #live2d-widget-model-wanko #碗+汪 #live2d-widget-model-z16 #军人cos scale: 1 hHeadPos: 0.5 vHeadPos: 0.618 display: superSample: 2 width: 200 height: 300 position: left # 左侧还是右侧 hOffset: 0 vOffset: -32 # 离底部距离 mobile: show: false # 手机客户端是否可见，推荐不可见，不然会影响阅读 scale: 0.5 react: opacityDefault: 0.7 opacityOnHover: 0.2 到目前为止，你只需要到GitHub上提取模型即可，上面代码中笔者已经整合了目前为止所有的模型名称，只需要将不用的模型前加上#而需要的去掉#即可；这里还想提醒下两种安装模型包的方法。第一种 使用git代码提取，以下为示例 npm install 模型名称第二种则是在GitHub上直接下载解压包解压到相应位置，即blog根目录下的node_modules文件夹里。之后运行 hexo g -d即可完成 文章部分内容来自不知道哪里捡来的博客以及Github 后记最近打算弄一个评论系统可能近期会出现(●’◡’●)]]></content>
+<search> 
+  
+  
+    
+    <entry>
+      <title>博客美化（一）之看板娘安装</title>
+      <link href="/2019/07/21/%E2%80%9C%E2%80%9C%E5%8D%9A%E5%AE%A2%E7%BE%8E%E5%8C%96%EF%BC%88%E4%B8%80%EF%BC%89%E4%B9%8B%E7%9C%8B%E6%9D%BF%E5%A8%98%E5%AE%89%E8%A3%85%E2%80%9D/"/>
+      <url>/2019/07/21/%E2%80%9C%E2%80%9C%E5%8D%9A%E5%AE%A2%E7%BE%8E%E5%8C%96%EF%BC%88%E4%B8%80%EF%BC%89%E4%B9%8B%E7%9C%8B%E6%9D%BF%E5%A8%98%E5%AE%89%E8%A3%85%E2%80%9D/</url>
+      
+        <content type="html"><![CDATA[<h2 id="博客美化（一）"><a href="#博客美化（一）" class="headerlink" title="博客美化（一）"></a>博客美化（一）</h2><p><font size="4">近期笔者在网上看到了许多大佬关于如何美化博客的文章，其中大多都很详细，其实我只要贴上大佬的地址，相信你们通过看大佬的博客也可以有很大的收获，不过我还是打算分享下其中的一部分，即左边这个<del>小正太</del>究竟是怎么来的。</font></p><a id="more"></a><p><font size="4">首先我们需要安装hexo-helper-live2d，在blog根目录使用git-bash输入以下代码</font></p><pre><code>npm install --save hexo-helper-live2d</code></pre><p><font size="4">接下来是配置，找到与source文件夹同一级别下的_config.yml文件，添加以下代码</font></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br></pre></td><td class="code"><pre><span class="line"># 看板娘</span><br><span class="line">live2d:</span><br><span class="line">  enable: true #是否允许出现</span><br><span class="line">  scriptFrom: local</span><br><span class="line">  pluginRootPath: live2dw/</span><br><span class="line">  pluginJsPath: lib/</span><br><span class="line">  pluginModelPath: assets/</span><br><span class="line">  model:</span><br><span class="line">  #模型名称</span><br><span class="line">    use: #live2d-widget-model-chitose #西装男</span><br><span class="line">         #ive2d-widget-model-epsilon2_1 #loli</span><br><span class="line">         #live2d-widget-model-gf  </span><br><span class="line">         ##live2d-widget-model-haru\01 </span><br><span class="line">         ##live2d-widget-model-haru\02 </span><br><span class="line">         live2d-widget-model-haruto    #小正太</span><br><span class="line">         #live2d-widget-model-hibiki #学生妹</span><br><span class="line">         #live2d-widget-model-hijiki #黑猫</span><br><span class="line">         #live2d-widget-model-izumi  #女（红衣）</span><br><span class="line">         #live2d-widget-model-miku</span><br><span class="line">         #live2d-widget-model-ni-j #科学小正太</span><br><span class="line">         #live2d-widget-model-nico #狐狸小正太</span><br><span class="line">         #live2d-widget-model-nietzsche  #双马尾小loli1</span><br><span class="line">         #live2d-widget-model-nipsilon #双马尾小loli2</span><br><span class="line">         #live2d-widget-model-nito #菠萝头小loli</span><br><span class="line">         #live2d-widget-model-shizuku </span><br><span class="line">         #live2d-widget-model-tororo  #白猫</span><br><span class="line">         #live2d-widget-model-tsumiki  #绿头发的妹子</span><br><span class="line">         #live2d-widget-model-unitychan  #黄发小loli</span><br><span class="line">         #live2d-widget-model-wanko #碗+汪</span><br><span class="line">         #live2d-widget-model-z16  #军人cos</span><br><span class="line">    scale: 1</span><br><span class="line">    hHeadPos: 0.5</span><br><span class="line">    vHeadPos: 0.618</span><br><span class="line">  display:</span><br><span class="line">    superSample: 2</span><br><span class="line">    width: 200</span><br><span class="line">    height: 300</span><br><span class="line">    position: left # 左侧还是右侧</span><br><span class="line">    hOffset: 0</span><br><span class="line">    vOffset: -32 # 离底部距离</span><br><span class="line">  mobile:</span><br><span class="line">    show: false # 手机客户端是否可见，推荐不可见，不然会影响阅读</span><br><span class="line">    scale: 0.5</span><br><span class="line">  react:</span><br><span class="line">    opacityDefault: 0.7</span><br><span class="line">    opacityOnHover: 0.2</span><br></pre></td></tr></table></figure><p><font size="4">到目前为止，你只需要到GitHub上提取模型即可，上面代码中笔者已经整合了目前为止所有的模型名称，只需要将不用的模型前加上#而需要的去掉#即可；这里还想提醒下两种安装模型包的方法。<br>第一种 使用git代码提取，以下为示例</font></p><pre><code>npm install 模型名称</code></pre><p><font size="4">第二种则是在GitHub上直接下载解压包解压到相应位置，即blog根目录下的node_modules文件夹里。</font><br><img src="https://s2.ax1x.com/2019/07/21/epPdKO.png" alt="1" title="文件夹截图"><br><font size="4">之后运行</font></p><pre><code>hexo g -d</code></pre><p><font size="4">即可完成</font></p><hr><p>文章部分内容来自<a href="http://dugblog.coding.me/" target="_blank" rel="noopener"><font color="orange">不知道哪里捡来的博客</font></a>以及<a href="https://github.com/EYHN/hexo-helper-live2d/blob/master/README.zh-CN.md" target="_blank" rel="noopener"><font color="orange">Github</font></a></p><hr><h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><p><font size="4">最近打算弄一个评论系统可能近期会出现(●’◡’●)</font></p>]]></content>
+      
+      
       <categories>
-        <category>博客美化</category>
+          
+          <category> 博客美化 </category>
+          
       </categories>
-      <tags>
-        <tag>美化</tag>
-        <tag>github</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[如何使用SVP将30帧视频转换为60帧视频]]></title>
-    <url>%2F2019%2F07%2F20%2F%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8SVP%E5%B0%8630%E5%B8%A7%E8%A7%86%E9%A2%91%E8%BD%AC%E6%8D%A2%E4%B8%BA60%E5%B8%A7%E8%A7%86%E9%A2%91%2F</url>
-    <content type="text"><![CDATA[SVP全称是Smooth Video Project，是一种可以利用补充中间帧提升视频帧数从而使视频画面更加流畅的软件技术，下面我将根据网上的内容进行详细的说明。 首先先让我们体会一下30帧视频和60帧视频的区别，此处我直接引用了Youtube上进击的巨人的视频，相信看过视频之后你们就会明白二者的区别了。（对于进入链接404的人请使用VPN访问，此处暂不提供VPN）由上面的视频我们可以看出，SVP技术应用于Anime（动画）时效果会更加明显。既然已经了解了60帧的魅力，也就不难发现如果一个人长时间观看60帧视频，当他再次重新回归30（或24）帧时其实是无法接受的，这也是为什么60帧视频会是将来在线视频网站都要关注的发展方向。SVP作为一种软件其实本质上类似于一种视频滤镜，不过与我们平日里想象的滤镜不太一样罢了。目前的SVP已经推出了SVP4版本，可是无奈学生党资金有限，只好暂时使用SVP4破解版来给大家介绍了，不过如果大家仅仅想要尝试的话使用正版也可以，毕竟还有30天的试用呢。使用SVP之前需要适合的播放器，这里我推荐使用Potplayer。这里还有一点需要注意就是64位系统的用户在安装SVP4时一定要在把64-bit选项选上，否则SVP4将无法在播放器中运行。在安装完Potplayer与SVP4之后，打开Potplayer进去选项画面。按照1，2，3，4步骤找出以下滤镜并把ffdshow raw video filter的优先顺序改为“强制使用”打开SVP4的软件，再使用Potplayer播放视频就可以了，这里还要提醒一下就是每次使用SVP时都要先打开SVP的软件，然后才可以使用播放器播放视频。最后你可以查看属性，笔者的电脑由于刷新率是144Hz所以SVP直接把视频帧率拉到了144帧，如果你的电脑是60Hz刷新率则帧数会提升至60帧，目前还没找到如何锁定帧数提升的方法，如果找到后续会进行更新。最后祝愿大家观影愉快！ 文章部分内容来自wikipedia]]></content>
+      
+      
+        <tags>
+            
+            <tag> 美化 </tag>
+            
+            <tag> github </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>如何使用SVP将30帧视频转换为60帧视频</title>
+      <link href="/2019/07/20/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8SVP%E5%B0%8630%E5%B8%A7%E8%A7%86%E9%A2%91%E8%BD%AC%E6%8D%A2%E4%B8%BA60%E5%B8%A7%E8%A7%86%E9%A2%91/"/>
+      <url>/2019/07/20/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8SVP%E5%B0%8630%E5%B8%A7%E8%A7%86%E9%A2%91%E8%BD%AC%E6%8D%A2%E4%B8%BA60%E5%B8%A7%E8%A7%86%E9%A2%91/</url>
+      
+        <content type="html"><![CDATA[<p><font size="4">SVP全称是Smooth Video Project，是一种可以利用补充中间帧提升视频帧数从而使视频画面更加流畅的软件技术，下面我将根据网上的内容进行详细的说明。</font></p><a id="more"></a><p><font size="4">首先先让我们体会一下30帧视频和60帧视频的区别，此处我直接引用了Youtube上<a href="https://www.youtube.com/watch?v=Wjb6CSe4708" target="_blank" rel="noopener"><font color="orange">进击的巨人的视频</font></a>，相信看过视频之后你们就会明白二者的区别了。（对于进入链接404的人请使用VPN访问，此处暂不提供VPN）<br>由上面的视频我们可以看出，SVP技术应用于Anime（动画）时效果会更加明显。既然已经了解了60帧的魅力，也就不难发现如果一个人长时间观看60帧视频，当他再次重新回归30（或24）帧时其实是无法接受的，这也是为什么60帧视频会是将来在线视频网站都要关注的发展方向。SVP作为一种软件其实本质上类似于一种视频滤镜，不过与我们平日里想象的滤镜不太一样罢了。目前的SVP已经推出了SVP4版本，可是无奈学生党资金有限，只好暂时使用<del>SVP4破解版</del>来给大家介绍了，不过如果大家仅仅想要尝试的话使用正版也可以，毕竟还有30天的试用呢。使用SVP之前需要适合的播放器，这里我推荐使用<font color="orange">Potplayer</font>。这里还有一点需要注意就是64位系统的用户在安装SVP4时一定要在把64-bit选项选上，否则SVP4将无法在播放器中运行。<br><img src="https://s2.ax1x.com/2019/07/20/ZzATOO.png" alt="1" title="SVP4安装界面"><br>在安装完Potplayer与SVP4之后，打开Potplayer进去选项画面。<br><img src="https://s2.ax1x.com/2019/07/20/ZzEpX8.png" alt="2" title="Potplayer主界面"><br>按照1，2，3，4步骤找出以下滤镜并把ffdshow raw video filter的优先顺序改为<font color="red">“强制使用”</font><br><img src="https://s2.ax1x.com/2019/07/20/ZzERu8.png" alt="3" title="Potplayer选项界面"><br>打开SVP4的软件，再使用Potplayer播放视频就可以了，这里还要提醒一下就是每次使用SVP时都要先打开SVP的软件，然后才可以使用播放器播放视频。最后你可以查看属性，笔者的电脑由于刷新率是144Hz所以SVP直接把视频帧率拉到了144帧，如果你的电脑是60Hz刷新率则帧数会提升至60帧，目前还没找到如何锁定帧数提升的方法，如果找到后续会进行更新。<br><img src="https://s2.ax1x.com/2019/07/20/ZzVya4.png" alt="4" title="视频属性"><br>最后祝愿大家观影愉快！</font></p><hr><p>文章部分内容来自<a href="https://www.svp-team.cn.com/wiki/Main_Page" target="_blank" rel="noopener">wikipedia</a></p>]]></content>
+      
+      
       <categories>
-        <category>技术分享</category>
+          
+          <category> 技术分享 </category>
+          
       </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>视频技术</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Pray For Kyoto Anime]]></title>
-    <url>%2F2019%2F07%2F18%2FPray-For-Kyoto-Anime%2F</url>
-    <content type="text"><![CDATA[2019.7.18注定是一个不寻常的日子。Kyoto Animation（京都动画）又名“京阿尼”，其第一工作室于这天烧毁，截至于2019.7.18下午已经有33人死亡，36人轻重伤，以及数人失联……如此惨状让人难以相信又不得不去相信，我不知道那名40多岁的人是怀着怎样的心情做的这件事，毕竟截至现在都还不清楚是否为其所做。虽说我并没有十分了解这件事情，我只是在一些网站上看到了新闻的内容，不过我还是打算写下我对于京都动画所拥有的内心感受。 我并不像那些京吹那样看过诸多京都anime的作品，我先列举一下我所看过的，『冰菓』『境界的彼方』『紫罗兰的永恒花园』『FateZero』『Clannad』，至于其他的我可能还一时记不得了；其中要数『Clannad』与『紫罗兰的永恒花园』对我的感触最深。我出生于中国的一个十八线小县城，家庭环境不算富裕，甚至儿时还有些拘谨；我出生的第一印象就是我的母亲，父亲以及我的姥姥，姥爷，因为我的母亲身体不好，办了病退，父亲一人支撑着家庭，不过好在我们家距离姥姥家很近，于是我们一家三口经常早上，中午，甚至晚上去姥姥家蹭饭吃，这其实也减轻了不少的负担，我也对姥姥和姥爷有了浓重的亲近感。2007年我的父亲为了赚钱前往内蒙工作，当他询问我是否打算一起去时，我有些犹豫，但还是决定一起去，毕竟谁儿时不会为了草原和马而兴奋呢？可事实是那里根本没有马，我们只是从一个十八线小县城搬到另一个十八线小县城罢了。那年我6岁。一年级的生活很糟糕，真的很糟糕，以至于我并不想回忆起。我只用一句话概括，那就是被全班同学排挤。有一件事我至今难忘，我的一个A同学，他经常欺负我，每次他都会借我的玩具，而第二天便会告诉我他弄丢了，其实我一眼就知道他在说谎，后来我看到他拿着我的玩具和别的小朋友玩时，我质问他为什么不还给我，他却说这是他的，可他并不知道，那个玩具拆开后里面有我的名字。我在这里并不是说所有内蒙的小学生都是如此，我相信这个世界上还是善良的小孩子多的，我也试着去相信每一个怀有恶意的小孩都是有一段并不愉快的经历才导致其变成这样的，可我恐怕再无机会去知晓那个A同学的“不愉快的经历”了。与全班同学为敌听起来很cool，但是实际上却是一段孤独与寂寞的历程。我不想多说，因为再说下去恐怕我这篇文章就变成了我自己的牢骚了。终于经历了一年的生活，我又回到了我的家乡，不知怎的，回到家乡后我又怀念那段孤独的生活，每天跑到学校后面的施工地上看云，冬天在齐腰深的雪地里玩耍，夏天与母亲一起吃冰棍，以及自己在家玩游戏，甚至发呆都显得那么金贵，我想那时我就已经开始喜欢甚至爱上了独处。以至于回到家乡，家乡的嘈杂让我感到不适。伴随着一阵掌声，我来到了二年级，但这里也不是我内心的栖息之地，如果说一年级的生活是糟糕的，那么这之后以至于小学毕业的日子就是黑暗的。霸凌完美解释了我当时在班级里的处境。具体我不再详细描述，一是没有必要，二是真的不堪入目，我不想回忆起。我不知是从什么时候开始，我总是能从房间里被吵醒，我一直以为是母亲和姥姥日常的拌嘴，可后来我才明白，原来是母亲和父亲要离婚了。我不知道要怎么形容当时的心情，可我确定那不是伤心，也不是一点感觉都没有，我只是在想如果母亲和父亲离婚了，那我是不是再也见不到父亲了，可答案是否定了，那么这对我又有什么影响呢，平时我见到父亲的时间就很少，就算离了婚对我来说也没有改变什么。可我错了，离婚对我没有影响，但对我母亲不是。我的母亲属于那种脾气很不好，经常会和邻居吵架，而且是会动手掐人的脖子（我并没有亲眼见过，但我能想象的出），她的薪水根本不够我和她的生活，更别说我的上学费用了，无奈之下，只能依靠我的姥姥，我的姥姥是一位非常优秀的老人，她17岁才开始上学，很快就上了济南一中，在那毕业后又去了电校，毕业后分配到工厂里做了技术员，在经济大萧条的时候全场唯一一位在职女性就是她了，所以在我的印象中，姥姥其实替代了我母亲的角色，而我的母亲，也开始患上了精神疾病。与患有精神疾病的人相处时怎样的感觉？我只能告诉你，如果是与你无关的人，那么你不会受到任何影响，而随着关系的深入，痛苦就会随之加深，而我与之相处的就是这辈子与我关系最深的——母亲。我曾经因为年少不小心花掉了50块的电话费，那一天我差点死在我母亲的刀下……可我依然想去相信世上的母亲还是会爱孩子的，毕竟曾经的我们还是关系紧密，亲密无间。我将我所有的悲伤压抑住，让自己冷掉，专心于学习，好在苍天不负有心人，我从班级倒数第一最后以正数11考入了县里最好的高中。就是在这时我遇见了『Clannad』，我至今仍记得冈崎朋也原谅他父亲时的画面，那一刻我仿佛与男主重叠，只不过我遭遇的是母亲，而他是父亲，也是这部动画让我重新认识到亲情的温暖。『紫罗兰的永恒花园』第11集，当我看到母亲留给女儿的几十封信件的时候，不知为何泪水打湿了我的脸颊，我又一次感受到了母爱，而这是我在现实中不曾真正获得的。2019年高中毕业，我即将前往大学生活，前途是光明的，虽然仍会有困难，可我不会屈服，努力，努力，再努力，拼搏，拼搏，再拼搏！说到这里其实我写京都动画的部分不是很多，更多的像是我自己的传记似的，但是京都动画对于我来说虽不是影响了我的一生，但却带给了我很多我失去的东西，而这正是其最珍贵之处。希望死者安息，生者早日康复。2019.7.18]]></content>
+      
+      
+        <tags>
+            
+            <tag> 技术 </tag>
+            
+            <tag> 视频技术 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Pray For Kyoto Anime</title>
+      <link href="/2019/07/18/Pray-For-Kyoto-Anime/"/>
+      <url>/2019/07/18/Pray-For-Kyoto-Anime/</url>
+      
+        <content type="html"><![CDATA[<p><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=22706980&auto=1&height=66"></iframe><br><font size="4">2019.7.18注定是一个不寻常的日子。<br>Kyoto Animation（京都动画）又名“京阿尼”，其第一工作室于这天烧毁，截至于2019.7.18下午已经有33人死亡，36人轻重伤，以及数人失联……如此惨状让人难以相信又不得不去相信，我不知道那名40多岁的人是怀着怎样的心情做的这件事，毕竟截至现在都还不清楚是否为其所做。虽说我并没有十分了解这件事情，我只是在一些网站上看到了新闻的内容，不过我还是打算写下我对于京都动画所拥有的内心感受。</font></p><a id="more"></a><p><font size="4">我并不像那些京吹那样看过诸多京都anime的作品，我先列举一下我所看过的，『冰菓』『境界的彼方』『紫罗兰的永恒花园』『FateZero』『Clannad』，至于其他的我可能还一时记不得了；其中要数『Clannad』与『紫罗兰的永恒花园』对我的感触最深。<br>我出生于中国的一个十八线小县城，家庭环境不算富裕，甚至儿时还有些拘谨；我出生的第一印象就是我的母亲，父亲以及我的姥姥，姥爷，因为我的母亲身体不好，办了病退，父亲一人支撑着家庭，不过好在我们家距离姥姥家很近，于是我们一家三口经常早上，中午，甚至晚上去姥姥家蹭饭吃，这其实也减轻了不少的负担，我也对姥姥和姥爷有了浓重的亲近感。<br>2007年我的父亲为了赚钱前往内蒙工作，当他询问我是否打算一起去时，我有些犹豫，但还是决定一起去，毕竟谁儿时不会为了草原和马而兴奋呢？可事实是那里根本没有马，我们只是从一个十八线小县城搬到另一个十八线小县城罢了。<br>那年我6岁。一年级的生活很糟糕，真的很糟糕，以至于我并不想回忆起。<br>我只用一句话概括，那就是被全班同学排挤。有一件事我至今难忘，我的一个A同学，他经常欺负我，每次他都会借我的玩具，而第二天便会告诉我他弄丢了，其实我一眼就知道他在说谎，后来我看到他拿着我的玩具和别的小朋友玩时，我质问他为什么不还给我，他却说这是他的，可他并不知道，那个玩具拆开后里面有我的名字。我在这里并不是说所有内蒙的小学生都是如此，我相信这个世界上还是善良的小孩子多的，我也试着去相信每一个怀有恶意的小孩都是有一段并不愉快的经历才导致其变成这样的，可我恐怕再无机会去知晓那个A同学的“不愉快的经历”了。<br>与全班同学为敌听起来很cool，但是实际上却是一段孤独与寂寞的历程。我不想多说，因为再说下去恐怕我这篇文章就变成了我自己的牢骚了。<br>终于经历了一年的生活，我又回到了我的家乡，不知怎的，回到家乡后我又怀念那段孤独的生活，每天跑到学校后面的施工地上看云，冬天在齐腰深的雪地里玩耍，夏天与母亲一起吃冰棍，以及自己在家玩游戏，甚至发呆都显得那么金贵，我想那时我就已经开始喜欢甚至爱上了独处。以至于回到家乡，家乡的嘈杂让我感到不适。<br>伴随着一阵掌声，我来到了二年级，但这里也不是我内心的栖息之地，如果说一年级的生活是糟糕的，那么这之后以至于小学毕业的日子就是黑暗的。霸凌完美解释了我当时在班级里的处境。具体我不再详细描述，一是没有必要，二是真的不堪入目，我不想回忆起。<br>我不知是从什么时候开始，我总是能从房间里被吵醒，我一直以为是母亲和姥姥日常的拌嘴，可后来我才明白，原来是母亲和父亲要离婚了。我不知道要怎么形容当时的心情，可我确定那不是伤心，也不是一点感觉都没有，我只是在想如果母亲和父亲离婚了，那我是不是再也见不到父亲了，可答案是否定了，那么这对我又有什么影响呢，平时我见到父亲的时间就很少，就算离了婚对我来说也没有改变什么。<br>可我错了，离婚对我没有影响，但对我母亲不是。<br>我的母亲属于那种脾气很不好，经常会和邻居吵架，而且是会动手掐人的脖子（我并没有亲眼见过，但我能想象的出），她的薪水根本不够我和她的生活，更别说我的上学费用了，无奈之下，只能依靠我的姥姥，我的姥姥是一位非常优秀的老人，她17岁才开始上学，很快就上了济南一中，在那毕业后又去了电校，毕业后分配到工厂里做了技术员，在经济大萧条的时候全场唯一一位在职女性就是她了，所以在我的印象中，姥姥其实替代了我母亲的角色，而我的母亲，也开始患上了精神疾病。<br>与患有精神疾病的人相处时怎样的感觉？我只能告诉你，如果是与你无关的人，那么你不会受到任何影响，而随着关系的深入，痛苦就会随之加深，而我与之相处的就是这辈子与我关系最深的——母亲。我曾经因为年少不小心花掉了50块的电话费，那一天我差点死在我母亲的刀下……<br>可我依然想去相信世上的母亲还是会爱孩子的，毕竟曾经的我们还是关系紧密，亲密无间。我将我所有的悲伤压抑住，让自己冷掉，专心于学习，好在苍天不负有心人，我从班级倒数第一最后以正数11考入了县里最好的高中。<br>就是在这时我遇见了『Clannad』，我至今仍记得冈崎朋也原谅他父亲时的画面，那一刻我仿佛与男主重叠，只不过我遭遇的是母亲，而他是父亲，也是这部动画让我重新认识到亲情的温暖。『紫罗兰的永恒花园』第11集，当我看到母亲留给女儿的几十封信件的时候，不知为何泪水打湿了我的脸颊，我又一次感受到了母爱，而这是我在现实中不曾真正获得的。<br>2019年高中毕业，我即将前往大学生活，前途是光明的，虽然仍会有困难，可我不会屈服，努力，努力，再努力，拼搏，拼搏，再拼搏！<br>说到这里其实我写京都动画的部分不是很多，更多的像是我自己的传记似的，但是京都动画对于我来说虽不是影响了我的一生，但却带给了我很多我失去的东西，而这正是其最珍贵之处。<br>希望死者安息，生者早日康复。<br>2019.7.18<br><img src="https://s2.ax1x.com/2019/07/21/ep8uz8.jpg" alt="1" title="Pray For Kyoani"></font></p>]]></content>
+      
+      
       <categories>
-        <category>杂谈</category>
+          
+          <category> 杂谈 </category>
+          
       </categories>
-      <tags>
-        <tag>祈福</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[初次见面 请多指教]]></title>
-    <url>%2F2019%2F07%2F06%2F%E5%88%9D%E6%AC%A1%E8%A7%81%E9%9D%A2-%E8%AF%B7%E5%A4%9A%E6%8C%87%E6%95%99%2F</url>
-    <content type="text"><![CDATA[你好，世界2019.7.6 这个博客其实早在几天就在一位蒟蒻的帮助下顺利地建立了起来，但由于时间关系，直到今日才有时间写我的第一篇文章，想来也没做什么准备，只好打上“你好，世界”。接下来我会持续更新我个人的学习和生活状况以及我个人的一些小小的经验之谈。 初めまして よろしくお願いします]]></content>
+      
+      
+        <tags>
+            
+            <tag> 祈福 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>初次见面 请多指教</title>
+      <link href="/2019/07/06/%E5%88%9D%E6%AC%A1%E8%A7%81%E9%9D%A2-%E8%AF%B7%E5%A4%9A%E6%8C%87%E6%95%99/"/>
+      <url>/2019/07/06/%E5%88%9D%E6%AC%A1%E8%A7%81%E9%9D%A2-%E8%AF%B7%E5%A4%9A%E6%8C%87%E6%95%99/</url>
+      
+        <content type="html"><![CDATA[<p><font size="6">你好，世界</font><br><em>2019.7.6</em></p><p><font size="4">这个博客其实早在几天就在一位<font color="red"><del>蒟蒻</del></font>的帮助下顺利地建立了起来，但由于时间关系，直到今日才有时间写我的第一篇文章，想来也没做什么准备，只好打上“你好，世界”。接下来我会持续更新我个人的学习和生活状况以及我个人的一些小小的经验之谈。</font></p><a id="more"></a><p><img src="https://s2.ax1x.com/2019/07/06/Z0BhbF.png" alt="初めまして よろしくお願いします" title="图片来自Pixiv ikuyoan"><br><font color="orange" face="仿宋" size="4">初めまして よろしくお願いします</font></p>]]></content>
+      
+      
       <categories>
-        <category>杂谈</category>
+          
+          <category> 杂谈 </category>
+          
       </categories>
-      <tags>
-        <tag>第一次</tag>
-      </tags>
-  </entry>
+      
+      
+        <tags>
+            
+            <tag> 第一次 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
 </search>
