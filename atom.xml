@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://okawai.coding.me/"/>
-  <updated>2019-07-21T13:15:20.000Z</updated>
+  <updated>2019-07-23T05:13:40.000Z</updated>
   <id>http://okawai.coding.me/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>RPG Maker 游戏开发初试</title>
+    <link href="http://okawai.coding.me/2019/07/23/RPG-Maker-%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91%E5%B0%9D%E8%AF%95/"/>
+    <id>http://okawai.coding.me/2019/07/23/RPG-Maker-游戏开发尝试/</id>
+    <published>2019-07-23T05:07:47.000Z</published>
+    <updated>2019-07-23T05:13:40.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;font size=&quot;4&quot;&gt;RPG Maker MV是一款可供零基础小白创作自己RPG游戏的软件，其本身在Steam就可以购买下载。笔者&lt;del&gt;突发奇想&lt;/del&gt;特地买来尝试，顺利的话之后会有部分开发日志更新。&lt;/font&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="RPG maker" scheme="http://okawai.coding.me/categories/RPG-maker/"/>
+    
+    
+      <category term="RPG" scheme="http://okawai.coding.me/tags/RPG/"/>
+    
+      <category term="游戏" scheme="http://okawai.coding.me/tags/%E6%B8%B8%E6%88%8F/"/>
+    
+      <category term="开发" scheme="http://okawai.coding.me/tags/%E5%BC%80%E5%8F%91/"/>
+    
+  </entry>
   
   <entry>
     <title>博客美化（一）之看板娘安装</title>
