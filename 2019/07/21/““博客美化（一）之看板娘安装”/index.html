@@ -479,18 +479,55 @@
         <h2 id="博客美化（一）"><a href="#博客美化（一）" class="headerlink" title="博客美化（一）"></a>博客美化（一）</h2><p><font size="4">近期笔者在网上看到了许多大佬关于如何美化博客的文章，其中大多都很详细，其实我只要贴上大佬的地址，相信你们通过看大佬的博客也可以有很大的收获，不过我还是打算分享下其中的一部分，即左边这个<del>小正太</del>究竟是怎么来的。</font></p>
 <a id="more"></a>
 <p><font size="4">首先我们需要安装hexo-helper-live2d，在blog根目录使用git-bash输入以下代码</font></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install --save hexo-helper-live2d</span><br></pre></td></tr></table></figure>
-
-<p><font size="4">接下来是配置，找到与source文件夹同一级别下的_config.yml文件，添加以下代码</font></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br></pre></td><td class="code"><pre><span class="line"># 看板娘</span><br><span class="line">live2d:</span><br><span class="line">  enable: true #是否允许出现</span><br><span class="line">  scriptFrom: local</span><br><span class="line">  pluginRootPath: live2dw/</span><br><span class="line">  pluginJsPath: lib/</span><br><span class="line">  pluginModelPath: assets/</span><br><span class="line">  model:</span><br><span class="line">  #模型名称</span><br><span class="line">    use: #live2d-widget-model-chitose #西装男</span><br><span class="line">         #ive2d-widget-model-epsilon2_1 #loli</span><br><span class="line">         #live2d-widget-model-gf  </span><br><span class="line">         ##live2d-widget-model-haru\01 </span><br><span class="line">         ##live2d-widget-model-haru\02 </span><br><span class="line">         live2d-widget-model-haruto    #小正太</span><br><span class="line">         #live2d-widget-model-hibiki #学生妹</span><br><span class="line">         #live2d-widget-model-hijiki #黑猫</span><br><span class="line">         #live2d-widget-model-izumi  #女（红衣）</span><br><span class="line">         #live2d-widget-model-miku</span><br><span class="line">         #live2d-widget-model-ni-j #科学小正太</span><br><span class="line">         #live2d-widget-model-nico #狐狸小正太</span><br><span class="line">         #live2d-widget-model-nietzsche  #双马尾小loli1</span><br><span class="line">         #live2d-widget-model-nipsilon #双马尾小loli2</span><br><span class="line">         #live2d-widget-model-nito #菠萝头小loli</span><br><span class="line">         #live2d-widget-model-shizuku </span><br><span class="line">         #live2d-widget-model-tororo  #白猫</span><br><span class="line">         #live2d-widget-model-tsumiki  #绿头发的妹子</span><br><span class="line">         #live2d-widget-model-unitychan  #黄发小loli</span><br><span class="line">         #live2d-widget-model-wanko #碗+汪</span><br><span class="line">         #live2d-widget-model-z16  #军人cos</span><br><span class="line">    scale: 1</span><br><span class="line">    hHeadPos: 0.5</span><br><span class="line">    vHeadPos: 0.618</span><br><span class="line">  display:</span><br><span class="line">    superSample: 2</span><br><span class="line">    width: 200</span><br><span class="line">    height: 300</span><br><span class="line">    position: left # 左侧还是右侧</span><br><span class="line">    hOffset: 0</span><br><span class="line">    vOffset: -32 # 离底部距离</span><br><span class="line">  mobile:</span><br><span class="line">    show: false # 手机客户端是否可见，推荐不可见，不然会影响阅读</span><br><span class="line">    scale: 0.5</span><br><span class="line">  react:</span><br><span class="line">    opacityDefault: 0.7</span><br><span class="line">    opacityOnHover: 0.2</span><br></pre></td></tr></table></figure>
-
-<p><font size="4">到目前为止，你只需要到GitHub上提取模型即可，上面代码中笔者已经整合了目前为止所有的模型名称，只需要将不用的模型前加上#而需要的去掉#即可；这里还想提醒下两种安装模型包的方法。<br>第一种 使用git代码提取，以下为示例</font></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install 模型名称</span><br></pre></td></tr></table></figure>
-
-<p><font size="4">第二种则是在GitHub上直接下载解压包解压到相应位置，即blog根目录下的node_modules文件夹里。</font><br><img src="https://s2.ax1x.com/2019/07/21/epPdKO.png" alt="1" title="文件夹截图"><br><font size="4">之后运行</font></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g -d</span><br></pre></td></tr></table></figure>
-
-<p><font size="4">即可完成</font></p>
+<pre><code>npm install --save hexo-helper-live2d</code></pre><p><font size="4">接下来是配置，找到与source文件夹同一级别下的_config.yml文件，添加以下代码</font></p>
+<pre><code># 看板娘
+live2d:
+  enable: true #是否允许出现
+  scriptFrom: local
+  pluginRootPath: live2dw/
+  pluginJsPath: lib/
+  pluginModelPath: assets/
+  model:
+  #模型名称
+    use: #live2d-widget-model-chitose #西装男
+         #ive2d-widget-model-epsilon2_1 #loli
+         #live2d-widget-model-gf  
+         ##live2d-widget-model-haru\01 
+         ##live2d-widget-model-haru\02 
+         live2d-widget-model-haruto    #小正太
+         #live2d-widget-model-hibiki #学生妹
+         #live2d-widget-model-hijiki #黑猫
+         #live2d-widget-model-izumi  #女（红衣）
+         #live2d-widget-model-miku
+         #live2d-widget-model-ni-j #科学小正太
+         #live2d-widget-model-nico #狐狸小正太
+         #live2d-widget-model-nietzsche  #双马尾小loli1
+         #live2d-widget-model-nipsilon #双马尾小loli2
+         #live2d-widget-model-nito #菠萝头小loli
+         #live2d-widget-model-shizuku 
+         #live2d-widget-model-tororo  #白猫
+         #live2d-widget-model-tsumiki  #绿头发的妹子
+         #live2d-widget-model-unitychan  #黄发小loli
+         #live2d-widget-model-wanko #碗+汪
+         #live2d-widget-model-z16  #军人cos
+    scale: 1
+    hHeadPos: 0.5
+    vHeadPos: 0.618
+  display:
+    superSample: 2
+    width: 200
+    height: 300
+    position: left # 左侧还是右侧
+    hOffset: 0
+    vOffset: -32 # 离底部距离
+  mobile:
+    show: false # 手机客户端是否可见，推荐不可见，不然会影响阅读
+    scale: 0.5
+  react:
+    opacityDefault: 0.7
+    opacityOnHover: 0.2</code></pre><p><font size="4">到目前为止，你只需要到GitHub上提取模型即可，上面代码中笔者已经整合了目前为止所有的模型名称，只需要将不用的模型前加上#而需要的去掉#即可；这里还想提醒下两种安装模型包的方法。<br>第一种 使用git代码提取，以下为示例</font></p>
+<pre><code>npm install 模型名称</code></pre><p><font size="4">第二种则是在GitHub上直接下载解压包解压到相应位置，即blog根目录下的node_modules文件夹里。</font><br><img src="https://s2.ax1x.com/2019/07/21/epPdKO.png" alt="1" title="文件夹截图"><br><font size="4">之后运行</font></p>
+<pre><code>hexo g -d</code></pre><p><font size="4">即可完成</font></p>
 <hr>
 <p>文章部分内容来自<a href="http://dugblog.coding.me/" target="_blank" rel="noopener"><font color="orange">不知道哪里捡来的博客</font></a>以及<a href="https://github.com/EYHN/hexo-helper-live2d/blob/master/README.zh-CN.md" target="_blank" rel="noopener"><font color="orange">Github</font></a></p>
 <hr>
@@ -650,8 +687,6 @@
                     
                       
                     
-                      
-                    
                     <span class="site-state-item-count">5</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
@@ -668,12 +703,6 @@
                     
                   
                     
-                    
-                      
-                    
-                      
-                    
-                      
                     
                       
                     
